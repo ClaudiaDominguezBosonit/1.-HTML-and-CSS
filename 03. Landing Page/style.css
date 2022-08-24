@@ -1,0 +1,241 @@
+/* Variables */
+
+:root {
+    --color-fontbright: gold;
+    --color-fontlight: #9D8D8E;
+    --color-darkbg: #46344E;
+    --color-lightbg: rgb(230, 223, 221);
+}
+
+@media screen and (max-width: 480px) {
+    #pricing {
+        flex-direction: column!important;
+        align-items: center;
+    }
+
+    iframe {
+        margin: 30px;
+    }
+}
+
+/* Main  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:var(--color-lightbg); 
+    font-family: Lato, sans-serif;
+}
+
+/* HEader  */
+
+header {
+    background-color: var(--color-darkbg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1%;
+}
+
+.logo {
+    width: 30%;
+}
+.logo img {
+    width: 100%;
+    filter: invert();
+}
+
+#nav-bar {
+    width: 60%;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: var(--color-fontlight);
+}
+#nav-bar a:hover {
+    color: var(--color-fontbright);
+}
+
+/* Mail  */
+
+#email-submit {
+    color: var(--color-darkbg);
+    font-size: 30px;
+    margin-top: 150px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#email-submit h2 {
+    font-weight: 900;
+}
+
+
+#email-submit form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email-submit #email {
+    padding: 3% 40%;
+    border: 1px solid black;
+    margin: 20% 0;
+}
+
+#email-submit #email:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: black;
+}
+
+#email-submit #submit {
+    padding: 7% 20%;
+    background-color: var(--color-fontbright);
+}
+#email-submit #submit:hover {
+    background-color: var(--color-darkbg);
+    color: white;
+}
+
+
+
+/* Features */
+
+.grid {
+display: flex;
+margin: 5% 10%;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    color: gold;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+}
+
+/* Video */
+
+#how-it-works {
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-works iframe {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Price  */
+
+#pricing {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: var();
+    border-radius: 5px;
+    box-shadow: 3px 3px 13px 1px rgba(0,0,0,0.75);
+}
+
+.product .level {
+    padding: 5% 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--color-darkbg);
+}
+
+.product ol {
+    margin: 3% 0;
+    text-align: center;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.product h2 {
+    margin-top: 10%;
+}
+
+.product .btn {
+    padding: 3% 10%;
+    background-color: var(--color-fontbright);
+    margin-bottom: 3%;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.product .btn:hover {
+    background-color: var(--color-darkbg);
+    color: white;
+}
+
+/* Footer  */
+
+footer {
+    background-color: var(--color-darkbg);
+    width: 55%;
+    padding: 1%;
+    margin: 5% 20% 0 23%;
+    margin-bottom: 0;
+    text-align: end;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 1% 2%;
+    gap: 1%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    margin: 1% 2%;
+    color: var(--color-fontlight);
+}
+
